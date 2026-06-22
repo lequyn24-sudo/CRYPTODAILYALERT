@@ -147,10 +147,6 @@ nav {
   box-shadow: var(--neu-shadow-inset);
   padding: var(--space-2) var(--space-4);
   border-radius: 50px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .nav-links {
