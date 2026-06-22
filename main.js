@@ -1,3 +1,6 @@
+import logoDark from '/Logo darkmode.png';
+import logoLight from '/lOGO LIGHTMODE.png';
+
 export function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -10,7 +13,7 @@ export function initTheme() {
     const logos = document.querySelectorAll('.logo-img, .footer-logo');
     logos.forEach(logo => {
         if (logo) {
-            logo.src = theme === 'dark' ? '/Logo darkmode.png' : '/lOGO LIGHTMODE.png';
+            logo.src = theme === 'dark' ? logoDark : logoLight;
             if (theme === 'light') {
                 logo.classList.add('is-light-mode');
             } else {
