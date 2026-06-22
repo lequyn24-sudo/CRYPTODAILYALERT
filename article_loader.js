@@ -62,7 +62,7 @@ export async function loadArticleData() {
     // Update the DOM
     document.querySelector('.article-title').textContent = title;
     
-    let headerCat = document.querySelector('.article-header .card-category');
+    let headerCat = document.querySelector('.article-header .article-category');
     if (headerCat) headerCat.textContent = category.toUpperCase();
     
     let featuredImg = document.querySelector('.article-featured-img');

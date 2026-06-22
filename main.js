@@ -94,3 +94,56 @@ window.addEventListener('pageshow', (e) => {
     document.body.style.display = '';
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInputs = document.querySelectorAll('.search-input');
+  const dummySuggestions = [
+    'Bitcoin ETF Approval',
+    'Ethereum 2.0 Updates',
+    'Solana Network Outage',
+    'Binance Regulatory News',
+    'DeFi Yield Farming',
+    'Crypto Market Crash',
+    'NFT Market Trends',
+    'Web3 Gaming',
+    'SEC Regulation',
+    'Ripple Lawsuit'
+  ];
+
+  searchInputs.forEach(input => {
+    const suggestionBox = document.createElement('ul');
+    suggestionBox.className = 'search-suggestions';
+    input.parentElement.appendChild(suggestionBox);
+
+    input.addEventListener('input', (e) => {
+      const val = e.target.value.toLowerCase();
+      suggestionBox.innerHTML = '';
+      if (!val) {
+        suggestionBox.classList.remove('active');
+        return;
+      }
+      
+      const matches = dummySuggestions.filter(s => s.toLowerCase().includes(val));
+      if (matches.length > 0) {
+        matches.forEach(match => {
+          const li = document.createElement('li');
+          li.textContent = match;
+          li.addEventListener('click', () => {
+            input.value = match;
+            suggestionBox.classList.remove('active');
+            window.location.href = '/category.html?cat=search&q=' + encodeURIComponent(match);
+          });
+          suggestionBox.appendChild(li);
+        });
+        suggestionBox.classList.add('active');
+      } else {
+        suggestionBox.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!input.parentElement.contains(e.target)) {
+        suggestionBox.classList.remove('active');
+      }
+    });
+  });
+});
