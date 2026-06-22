@@ -186,6 +186,40 @@ nav {
   gap: var(--space-4);
 }
 
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: var(--space-2) var(--space-4);
+  padding-right: 40px;
+  border-radius: 20px;
+  border: none;
+  background: var(--surface-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  box-shadow: var(--neu-shadow-inset);
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: var(--neu-shadow-extrude);
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
 .theme-toggle-switch, .btn {
   background: var(--surface-color);
   border: none;
