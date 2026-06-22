@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe - CryptoDailyAlert</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="/index.html" class="logo-container">
+        <img src="/Logo darkmode.png" alt="CryptoDailyAlert Logo" class="logo-img" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/category.html?cat=cryptonews">CryptoNews</a></li>
+          <li><a href="/category.html?cat=blockchain">Blockchain</a></li>
+          <li><a href="/category.html?cat=defi">DeFi</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-switch" aria-label="Toggle Theme">
+          <span class="switch-circle" id="theme-icon">☀️</span>
+        </button>
+        <a href="/subscribe.html" class="btn btn-primary" style="margin-left: var(--space-4);">Subscribe</a>
+      </div>
+    </div>
+    <div class="ticker">
+      <div class="ticker-content">
+        <span class="ticker-item">BTC <span class="ticker-up">▲ $64,230.50 (+2.4%)</span></span>
+        <span class="ticker-item">ETH <span class="ticker-down">▼ $3,450.20 (-1.2%)</span></span>
+        <span class="ticker-item">SOL <span class="ticker-up">▲ $145.80 (+5.6%)</span></span>
+        <span class="ticker-item">BNB <span class="ticker-up">▲ $590.10 (+0.8%)</span></span>
+        <span class="ticker-item">XRP <span class="ticker-down">▼ $0.48 (-0.5%)</span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh; padding: var(--space-10) 0;">
+    <div class="card fade-in" style="width: 100%; max-width: 500px; padding: var(--space-8); text-align: center;">
+      <h1 style="font-size: 2rem; margin-bottom: var(--space-2);">Subscribe</h1>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-8);">Get the latest crypto news delivered daily.</p>
+      
+      <form class="subscribe-form" style="display: flex; flex-direction: column; gap: var(--space-6); text-align: left;">
+        <div>
+          <label style="font-weight: 600; margin-bottom: var(--space-3); display: block;">Name</label>
+          <input type="text" class="input-field" placeholder="John Doe" required>
+        </div>
+        <div>
+          <label style="font-weight: 600; margin-bottom: var(--space-3); display: block;">Email Address</label>
+          <input type="email" class="input-field" placeholder="john@example.com" required>
+        </div>
+        <div>
+          <label style="font-weight: 600; margin-bottom: var(--space-3); display: block;">Topics of Interest</label>
+          <div class="tags-container">
+            <button type="button" class="btn btn-tag" onclick="this.classList.toggle('active')">Bitcoin</button>
+            <button type="button" class="btn btn-tag" onclick="this.classList.toggle('active')">Ethereum</button>
+            <button type="button" class="btn btn-tag" onclick="this.classList.toggle('active')">DeFi</button>
+            <button type="button" class="btn btn-tag" onclick="this.classList.toggle('active')">NFTs</button>
+            <button type="button" class="btn btn-tag" onclick="this.classList.toggle('active')">Policy</button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: var(--space-2); width: 100%; padding: 16px; font-size: 1.1rem;">Complete Subscription</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/Logo darkmode.png" alt="CryptoDailyAlert Logo" class="footer-logo" />
+          <p>CryptoDailyAlert - your go-to source for the most important news, in-depth analysis, and practical information on crypto.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="/category.html?cat=cryptonews">CryptoNews</a></li>
+            <li><a href="/category.html?cat=blockchain">Blockchain</a></li>
+            <li><a href="/category.html?cat=defi">DeFi</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe</h3>
+          <p>Get the latest crypto news directly to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CryptoDailyAlert. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">Twitter</a>
+          <a href="#">Telegram</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initTheme, initScrollAnimations } from '/main.js';
+    initTheme();
+    initScrollAnimations();
+  </script>
+</body>
+</html>

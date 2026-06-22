@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoDailyAlert - Blockchain News, BTC and Altcoins</title>
+  <meta name="description" content="Welcome to CryptoDailyAlert — your go-to source for the most important news, in-depth analysis, and practical information on crypto" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/style.css?v=4" />
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="/index.html" class="logo-container">
+        <img src="/Logo darkmode.png" alt="CryptoDailyAlert Logo" class="logo-img" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/category.html?cat=cryptonews">CryptoNews</a></li>
+          <li><a href="/category.html?cat=blockchain">Blockchain</a></li>
+          <li><a href="/category.html?cat=defi">DeFi</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-switch" aria-label="Toggle Theme">
+          <span class="switch-circle" id="theme-icon">☀️</span>
+        </button>
+        <a href="/subscribe.html" class="btn btn-primary" style="margin-left: var(--space-4);">Subscribe</a>
+      </div>
+    </div>
+    <div class="ticker">
+      <div class="ticker-content">
+        <span class="ticker-item">BTC <span class="ticker-up">▲ $64,230.50 (+2.4%)</span></span>
+        <span class="ticker-item">ETH <span class="ticker-down">▼ $3,450.20 (-1.2%)</span></span>
+        <span class="ticker-item">SOL <span class="ticker-up">▲ $145.80 (+5.6%)</span></span>
+        <span class="ticker-item">BNB <span class="ticker-up">▲ $590.10 (+0.8%)</span></span>
+        <span class="ticker-item">XRP <span class="ticker-down">▼ $0.48 (-0.5%)</span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="container" style="margin-top: var(--space-16); margin-bottom: var(--space-16);">
+    <div class="hero-title-wrapper fade-in" style="text-align: center; margin-bottom: var(--space-12);">
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; margin-bottom: var(--space-4); letter-spacing: -0.02em;">
+        Navigate the Crypto <br/><span style="background: -webkit-linear-gradient(135deg, #215aee, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">Revolution</span>
+      </h1>
+      <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+        Your trusted source for breaking news, deep analysis, and real-time alerts in the world of Blockchain and Web3.
+      </p>
+    </div>
+    <section class="hero-section fade-in">
+        <div class="hero-grid">
+          <article class="card hero-card">
+            <img src="https://images.unsplash.com/photo-1516245834210-c4c142787335?q=80&w=800&auto=format&fit=crop" alt="Bitcoin Halving" class="card-img" />
+            <div class="card-content">
+              <span class="card-category">Breaking News</span>
+              <h3 class="card-title" style="font-size: 2rem;"><a href="/article.html?id=10">Bitcoin Halving Completed: What's Next for Miners and Investors?</a></h3>
+              <p class="card-excerpt" style="font-size: 1.1rem;">The highly anticipated Bitcoin halving has successfully taken place, reducing block rewards from 6.25 to 3.125 BTC. Analysts predict significant market shifts in the coming months as supply tightens.</p>
+              <div class="card-meta">
+                <span>June 18, 2026</span>
+                <span>By Emma Watson</span>
+              </div>
+              <a href="/article.html?id=10" class="btn btn-primary" style="align-self: flex-start;">Read Full Story</a>
+            </div>
+          </article>
+          <div class="hero-side">
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1622790698141-94e30457ef12?q=80&w=200&auto=format&fit=crop" alt="Ethereum" class="card-thumb" />
+              <div class="card-content">
+                <span class="card-category">Regulation</span>
+                <h3 class="card-title" style="font-size: 1.1rem;"><a href="/article.html?id=11">SEC Approves Spot Ethereum ETFs After Long Delay</a></h3>
+                <div class="card-meta" style="margin-bottom: 0;"><span>2 hours ago</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=200&auto=format&fit=crop" alt="DeFi" class="card-thumb" />
+              <div class="card-content">
+                <span class="card-category">DeFi</span>
+                <h3 class="card-title" style="font-size: 1.1rem;"><a href="/article.html?id=12">Uniswap V4 Goes Live with Custom Hooks Feature</a></h3>
+                <div class="card-meta" style="margin-bottom: 0;"><span>4 hours ago</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=200&auto=format&fit=crop" alt="NFTs" class="card-thumb" />
+              <div class="card-content">
+                <span class="card-category">NFTs</span>
+                <h3 class="card-title" style="font-size: 1.1rem;"><a href="/article.html?id=13">Bored Ape Floor Price Hits Yearly High Amid Metaverse Launch</a></h3>
+                <div class="card-meta" style="margin-bottom: 0;"><span>6 hours ago</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?q=80&w=200&auto=format&fit=crop" alt="Web3" class="card-thumb" />
+              <div class="card-content">
+                <span class="card-category">Web3</span>
+                <h3 class="card-title" style="font-size: 1.1rem;"><a href="/article.html?id=14">New Web3 Gaming Platform Surpasses 1M Users</a></h3>
+                <div class="card-meta" style="margin-bottom: 0;"><span>8 hours ago</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+  </div>
+  <div class="container">
+      <!-- Market Overview -->
+      <section class="fade-in tracking-section" style="margin-top: var(--space-16); margin-bottom: 0;">
+      <h2 class="section-title">Market Overview</h2>
+      <div class="grid grid-cols-3">
+        <!-- Top Gainers -->
+        <div class="card fade-in">
+          <div class="card-content" style="padding-top: var(--space-2);">
+            <h3 class="card-title" style="margin-bottom: var(--space-4);">🚀 Top Gainers</h3>
+            <div class="tracking-list">
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/pepe-pepe-logo.png" alt="PEPE" class="coin-logo"> <span class="coin-symbol">PEPE</span> <span class="coin-name">Pepe</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.000012</span>
+                  <span class="coin-change ticker-up">+24.5%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://assets.coingecko.com/coins/images/33566/standard/dogwifhat.jpg" alt="WIF" class="coin-logo"> <span class="coin-symbol">WIF</span> <span class="coin-name">dogwifhat</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$2.45</span>
+                  <span class="coin-change ticker-up">+18.2%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/floki-inu-floki-logo.png" alt="FLOKI" class="coin-logo"> <span class="coin-symbol">FLOKI</span> <span class="coin-name">Floki</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.00021</span>
+                  <span class="coin-change ticker-up">+15.7%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/ondo-ondo-logo.png" alt="ONDO" class="coin-logo"> <span class="coin-symbol">ONDO</span> <span class="coin-name">Ondo</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$1.24</span>
+                  <span class="coin-change ticker-up">+12.4%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/render-token-rndr-logo.png" alt="RNDR" class="coin-logo"> <span class="coin-symbol">RNDR</span> <span class="coin-name">Render</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$8.90</span>
+                  <span class="coin-change ticker-up">+10.1%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Losers -->
+        <div class="card fade-in">
+          <div class="card-content" style="padding-top: var(--space-2);">
+            <h3 class="card-title" style="margin-bottom: var(--space-4);">📉 Top Losers</h3>
+            <div class="tracking-list">
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/terra-luna-luna-logo.png" alt="LUNA" class="coin-logo"> <span class="coin-symbol">LUNA</span> <span class="coin-name">Terra</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.0001</span>
+                  <span class="coin-change ticker-down">-14.2%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/ftx-token-ftt-logo.png" alt="FTT" class="coin-logo"> <span class="coin-symbol">FTT</span> <span class="coin-name">FTX Token</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$1.45</span>
+                  <span class="coin-change ticker-down">-11.5%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/chiliz-chz-logo.png" alt="CHZ" class="coin-logo"> <span class="coin-symbol">CHZ</span> <span class="coin-name">Chiliz</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.11</span>
+                  <span class="coin-change ticker-down">-8.4%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/the-sandbox-sand-logo.png" alt="SAND" class="coin-logo"> <span class="coin-symbol">SAND</span> <span class="coin-name">The Sandbox</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.42</span>
+                  <span class="coin-change ticker-down">-7.1%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/decentraland-mana-logo.png" alt="MANA" class="coin-logo"> <span class="coin-symbol">MANA</span> <span class="coin-name">Decentraland</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.38</span>
+                  <span class="coin-change ticker-down">-6.5%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trending Coins -->
+        <div class="card fade-in">
+          <div class="card-content" style="padding-top: var(--space-2);">
+            <h3 class="card-title" style="margin-bottom: var(--space-4);">🔥 Trending</h3>
+            <div class="tracking-list">
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://assets.coingecko.com/coins/images/35473/standard/notcoin.jpg" alt="NOT" class="coin-logo"> <span class="coin-symbol">NOT</span> <span class="coin-name">Notcoin</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$0.015</span>
+                  <span class="coin-change ticker-up">+8.4%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="SOL" class="coin-logo"> <span class="coin-symbol">SOL</span> <span class="coin-name">Solana</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$145.80</span>
+                  <span class="coin-change ticker-up">+5.6%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/toncoin-ton-logo.png" alt="TON" class="coin-logo"> <span class="coin-symbol">TON</span> <span class="coin-name">Toncoin</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$7.20</span>
+                  <span class="coin-change ticker-up">+4.2%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="BTC" class="coin-logo"> <span class="coin-symbol">BTC</span> <span class="coin-name">Bitcoin</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$64,230.50</span>
+                  <span class="coin-change ticker-up">+2.4%</span>
+                </div>
+              </div>
+              <div class="tracking-row">
+                <span class="coin-info"><img src="https://cryptologos.cc/logos/chainlink-link-logo.png" alt="LINK" class="coin-logo"> <span class="coin-symbol">LINK</span> <span class="coin-name">Chainlink</span></span>
+                <div class="price-info">
+                  <span class="coin-price">$15.40</span>
+                  <span class="coin-change ticker-down">-1.2%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+  </div>
+
+  <main class="container layout-with-sidebar">
+    <div class="main-content">
+      <!-- Trending & Breaking News -->
+      <section class="fade-in">
+      <h2 class="section-title">Trending & Breaking News</h2>
+      <div class="grid grid-cols-2">
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=800&auto=format&fit=crop" alt="Bitcoin" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">Bitcoin</span>
+            <h3 class="card-title"><a href="/article.html?id=1">Ledn Says Bitcoin-Backed Lending Market Could Hit $1 Trillion</a></h3>
+            <p class="card-excerpt">Institutional capital is flowing into Bitcoin-backed lending at an unprecedented rate, potentially creating a trillion-dollar market...</p>
+            <div class="card-meta">
+              <span>June 16, 2026</span>
+              <span>By Tommy Tommy</span>
+            </div>
+            <a href="/article.html?id=1" class="btn btn-primary" style="text-align: center;">Read Article</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800&auto=format&fit=crop" alt="Coinbase" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">CryptoNews</span>
+            <h3 class="card-title"><a href="/article.html?id=2">Coinbase Plans Tokenized U.S. Stock Offering Outside the U.S.</a></h3>
+            <p class="card-excerpt">In a major expansion move, Coinbase is preparing to offer tokenized versions of U.S. stocks to international customers...</p>
+            <div class="card-meta">
+              <span>June 17, 2026</span>
+              <span>By Tommy Tommy</span>
+            </div>
+            <a href="/article.html?id=2" class="btn btn-primary" style="text-align: center;">Read Article</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1622790698141-94e30457ef12?q=80&w=800&auto=format&fit=crop" alt="DeFi" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">DeFi</span>
+            <h3 class="card-title"><a href="/article.html?id=15">Uniswap V4 Goes Live with Custom Hooks</a></h3>
+            <p class="card-excerpt">The highly anticipated Uniswap V4 has officially launched on mainnet, bringing customizable liquidity pools to the ecosystem.</p>
+            <div class="card-meta">
+              <span>June 15, 2026</span>
+              <span>By DeFi Degen</span>
+            </div>
+            <a href="/article.html?id=15" class="btn btn-primary" style="text-align: center;">Read Article</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=800&auto=format&fit=crop" alt="Regulation" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">Regulation</span>
+            <h3 class="card-title"><a href="/article.html?id=16">MiCA Guidelines Clarify Stablecoin Rules</a></h3>
+            <p class="card-excerpt">European regulators have released the final set of guidelines for stablecoin issuers under the upcoming MiCA framework.</p>
+            <div class="card-meta">
+              <span>June 14, 2026</span>
+              <span>By Legal Expert</span>
+            </div>
+            <a href="/article.html?id=16" class="btn btn-primary" style="text-align: center;">Read Article</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=800&auto=format&fit=crop" alt="Market" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">Market</span>
+            <h3 class="card-title"><a href="/article.html?id=17">Institutional Inflows Reach All-Time High</a></h3>
+            <p class="card-excerpt">Digital asset investment products saw record inflows this week, driven primarily by strong demand for Bitcoin ETFs.</p>
+            <div class="card-meta">
+              <span>June 13, 2026</span>
+              <span>By Market Watch</span>
+            </div>
+            <a href="/article.html?id=17" class="btn btn-primary" style="text-align: center;">Read Article</a>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800&auto=format&fit=crop" alt="Web3" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">Web3</span>
+            <h3 class="card-title"><a href="/article.html?id=18">Decentralized Social Networks Gain Traction</a></h3>
+            <p class="card-excerpt">As users become more conscious of data privacy, decentralized alternatives to major social media platforms are seeing rapid growth.</p>
+            <div class="card-meta">
+              <span>June 12, 2026</span>
+              <span>By Tech Trends</span>
+            </div>
+            <a href="/article.html?id=18" class="btn btn-primary" style="text-align: center;">Read Article</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+      <!-- Horizontal Ad Banner -->
+      <div class="fade-in" style="margin-top: var(--space-16); min-height: 180px; background: var(--surface-color); border-radius: 20px; padding: var(--space-8); display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--border-color); box-shadow: var(--neu-shadow-inset);">
+        <div>
+          <span style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px; font-weight: 700;">Advertisement</span>
+          <h3 style="font-size: 2rem; font-weight: 800; margin-top: var(--space-3); margin-bottom: var(--space-3); color: var(--text-primary);">Trade Crypto with 0% Fees</h3>
+          <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 0;">Join over 10 million users on the world's fastest growing exchange.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.25rem; flex-shrink: 0; box-shadow: var(--neu-shadow-extrude);">Trade Now</a>
+      </div>
+      
+<!-- Deep Dives & Analysis -->
+      <div style="padding-top: var(--space-16); align-self: end;">
+      <section class="fade-in">
+      <h2 class="section-title">Deep Dives & Analysis</h2>
+      <div class="deep-dive-grid">
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=800&auto=format&fit=crop" alt="Analysis" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">Analysis</span>
+            <h3 class="card-title" style="font-size: 1.5rem;"><a href="/article.html?id=19">The State of Layer 2 Networks: Arbitrum vs Optimism</a></h3>
+            <p class="card-excerpt">An in-depth look at the scaling wars on Ethereum. Who is winning the TVL battle and what does the future hold for zero-knowledge rollups?</p>
+            <div class="card-meta">
+              <span>June 15, 2026</span>
+              <span>By Crypto Analyst</span>
+            </div>
+          </div>
+        </article>
+        <div class="deep-dive-list">
+          <div class="deep-dive-item fade-in">
+            <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=200&auto=format&fit=crop" alt="Tokenomics" class="card-thumb" />
+            <div class="deep-dive-content">
+              <span class="card-category">Tokenomics</span>
+              <h3 class="card-title" style="font-size: 1.1rem; margin-bottom: var(--space-2);"><a href="/article.html?id=20">Understanding Real Yield in 2026</a></h3>
+              <div class="card-meta" style="margin-bottom: 0;"><span>June 14, 2026</span></div>
+            </div>
+          </div>
+          <div class="deep-dive-item fade-in">
+            <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=200&auto=format&fit=crop" alt="Security" class="card-thumb" />
+            <div class="deep-dive-content">
+              <span class="card-category">Security</span>
+              <h3 class="card-title" style="font-size: 1.1rem; margin-bottom: var(--space-2);"><a href="/article.html?id=21">Anatomy of the $50M Bridge Hack</a></h3>
+              <div class="card-meta" style="margin-bottom: 0;"><span>June 12, 2026</span></div>
+            </div>
+          </div>
+          <div class="deep-dive-item fade-in" style="margin-top: auto;">
+            <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?q=80&w=200&auto=format&fit=crop" alt="Web3" class="card-thumb" />
+            <div class="deep-dive-content">
+              <span class="card-category">Web3 Gaming</span>
+              <h3 class="card-title" style="font-size: 1.1rem; margin-bottom: var(--space-2);"><a href="/article.html?id=22">Are AAA Web3 Games Finally Here?</a></h3>
+              <div class="card-meta" style="margin-bottom: 0;"><span>June 10, 2026</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+
+    </div> <!-- end main-content -->
+
+      <aside class="sidebar">
+      
+      <!-- Trending Tags -->
+      <div class="sidebar-widget fade-in">
+        <h4 class="sidebar-widget-title">Trending Tags</h4>
+        <div class="tags-container">
+          <a href="#" class="btn btn-tag">#Bitcoin</a>
+          <a href="#" class="btn btn-tag">#Ethereum</a>
+          <a href="#" class="btn btn-tag">#DeFi</a>
+          <a href="#" class="btn btn-tag">#NFT</a>
+          <a href="#" class="btn btn-tag">#Regulation</a>
+          <a href="#" class="btn btn-tag">#Web3</a>
+        </div>
+      </div>
+
+      <!-- Market Overview -->
+      <div class="sidebar-widget fade-in">
+        <h4 class="sidebar-widget-title">Market Overview</h4>
+        <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 32px; height: 32px; background: #F7931A; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.8rem;">₿</div>
+              <div style="line-height: 1.2;">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Bitcoin</div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary);">BTC</div>
+              </div>
+            </div>
+            <div style="text-align: right; line-height: 1.2;">
+              <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">$68,420</div>
+              <div style="font-size: 0.75rem; color: #10B981; font-weight: 600;">+2.4%</div>
+            </div>
+          </div>
+          
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 32px; height: 32px; background: #627EEA; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.8rem;">Ξ</div>
+              <div style="line-height: 1.2;">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Ethereum</div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary);">ETH</div>
+              </div>
+            </div>
+            <div style="text-align: right; line-height: 1.2;">
+              <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">$3,850</div>
+              <div style="font-size: 0.75rem; color: #10B981; font-weight: 600;">+1.2%</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 32px; height: 32px; background: #14F195; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.8rem;">S</div>
+              <div style="line-height: 1.2;">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Solana</div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary);">SOL</div>
+              </div>
+            </div>
+            <div style="text-align: right; line-height: 1.2;">
+              <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">$145</div>
+              <div style="font-size: 0.75rem; color: #EF4444; font-weight: 600;">-0.8%</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 32px; height: 32px; background: #F3BA2F; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.8rem;">B</div>
+              <div style="line-height: 1.2;">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Binance Coin</div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary);">BNB</div>
+              </div>
+            </div>
+            <div style="text-align: right; line-height: 1.2;">
+              <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">$590</div>
+              <div style="font-size: 0.75rem; color: #10B981; font-weight: 600;">+0.5%</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <div style="width: 32px; height: 32px; background: #23292F; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.8rem;">X</div>
+              <div style="line-height: 1.2;">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">XRP</div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary);">XRP</div>
+              </div>
+            </div>
+            <div style="text-align: right; line-height: 1.2;">
+              <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">$0.48</div>
+              <div style="font-size: 0.75rem; color: #EF4444; font-weight: 600;">-1.2%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editor's Picks -->
+      <div class="sidebar-widget fade-in">
+        <h4 class="sidebar-widget-title">Editor's Picks</h4>
+        <div class="sidebar-item-mini card">
+          <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?q=80&w=200&auto=format&fit=crop" alt="Thumbnail" />
+          <div>
+            <h5 class="card-title"><a href="/article.html?id=23">SEC Approves New Ethereum ETFs</a></h5>
+            <p class="card-meta">June 15, 2026</p>
+          </div>
+        </div>
+        <div class="sidebar-item-mini card">
+          <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=200&auto=format&fit=crop" alt="Thumbnail" />
+          <div>
+            <h5 class="card-title"><a href="/article.html?id=24">Top 5 Web3 Games to Watch</a></h5>
+            <p class="card-meta">June 14, 2026</p>
+          </div>
+        </div>
+        <div class="sidebar-item-mini card">
+          <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=200&auto=format&fit=crop" alt="Thumbnail" />
+          <div>
+            <h5 class="card-title"><a href="/article.html?id=25">Understanding Real Yield</a></h5>
+            <p class="card-meta">June 12, 2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendar -->
+      <div class="sidebar-widget fade-in">
+        <h4 class="sidebar-widget-title">Upcoming Events</h4>
+        <div class="calendar-event card">
+          <div class="calendar-date">
+            <span class="month">Jun</span>
+            <span class="day">20</span>
+          </div>
+          <div class="calendar-details">
+            <h5 class="card-title event-title"><a href="/article.html?id=8" style="color: inherit; text-decoration: none;">FOMC Meeting</a></h5>
+            <p class="event-desc">Interest rate decision</p>
+          </div>
+        </div>
+        <div class="calendar-event card">
+          <div class="calendar-date">
+            <span class="month">Jun</span>
+            <span class="day">25</span>
+          </div>
+          <div class="calendar-details">
+            <h5 class="card-title event-title"><a href="/article.html?id=9" style="color: inherit; text-decoration: none;">Solana Breakpoint</a></h5>
+            <p class="event-desc">Global developer conference</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Upcoming Airdrops -->
+      <div class="sidebar-widget fade-in">
+        <h4 class="sidebar-widget-title">Upcoming Airdrops</h4>
+        <div class="sidebar-item-mini card" style="display: flex; align-items: center; gap: var(--space-4);">
+          <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #FF6B6B, #FF8E53); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1rem; flex-shrink: 0; flex-grow: 0;">L</div>
+          <div style="flex: 1;">
+            <h5 class="card-title" style="margin-bottom: 2px;"><a href="/article.html?id=6" style="color: inherit; text-decoration: none;">LayerZero</a></h5>
+            <p class="card-meta" style="margin-bottom: 0;">Expected Q3 2026</p>
+          </div>
+          <span class="btn btn-tag" style="background: rgba(33, 90, 238, 0.1); color: var(--primary-color); font-size: 0.7rem; padding: 4px 8px;">Airdrop</span>
+        </div>
+        <div class="sidebar-item-mini card" style="display: flex; align-items: center; gap: var(--space-4);">
+          <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1rem; flex-shrink: 0; flex-grow: 0;">Z</div>
+          <div style="flex: 1;">
+            <h5 class="card-title" style="margin-bottom: 2px;"><a href="/article.html?id=7" style="color: inherit; text-decoration: none;">zkSync Token</a></h5>
+            <p class="card-meta" style="margin-bottom: 0;">Confirmed June 24</p>
+          </div>
+          <span class="btn btn-tag" style="background: rgba(255, 107, 107, 0.1); color: #FF6B6B; font-size: 0.7rem; padding: 4px 8px;">TGE</span>
+        </div>
+        <div class="sidebar-item-mini card" style="display: flex; align-items: center; gap: var(--space-4);">
+          <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #a18cd1, #fbc2eb); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1rem; flex-shrink: 0; flex-grow: 0;">W</div>
+          <div style="flex: 1;">
+            <h5 class="card-title" style="margin-bottom: 2px;"><a href="/article.html?id=26" style="color: inherit; text-decoration: none;">Wormhole</a></h5>
+            <p class="card-meta" style="margin-bottom: 0;">Expected Q2 2026</p>
+          </div>
+          <span class="btn btn-tag" style="background: rgba(161, 140, 209, 0.1); color: #a18cd1; font-size: 0.7rem; padding: 4px 8px;">Airdrop</span>
+        </div>
+      </div>
+
+      <!-- Sponsored -->
+      <div class="sidebar-widget fade-in">
+        <h4 class="sidebar-widget-title">Sponsored</h4>
+        <div class="sidebar-item-mini card">
+          <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?q=80&w=200&auto=format&fit=crop" alt="Thumbnail" />
+          <div>
+            <h5 class="card-title"><a href="/article.html?id=27" style="color: inherit; text-decoration: none;">Binance Introduces Zero-Fee Trading for Web3 Tokens</a></h5>
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+              <p class="card-meta">Sponsored</p>
+              <span class="btn btn-tag" style="background: rgba(33, 90, 238, 0.1); color: var(--primary-color); font-size: 0.6rem; padding: 2px 6px;">Ad</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-item-mini card">
+          <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=200&auto=format&fit=crop" alt="Thumbnail" />
+          <div>
+            <h5 class="card-title"><a href="/article.html?id=28" style="color: inherit; text-decoration: none;">Bybit Launches Next-Gen Options Trading Platform</a></h5>
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+              <p class="card-meta">Press Release</p>
+              <span class="btn btn-tag" style="background: rgba(33, 90, 238, 0.1); color: var(--primary-color); font-size: 0.6rem; padding: 2px 6px;">PR</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-item-mini card">
+          <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=200&auto=format&fit=crop" alt="Thumbnail" />
+          <div>
+            <h5 class="card-title"><a href="/article.html?id=29" style="color: inherit; text-decoration: none;">Galaxy Digital Announces $100M Crypto Venture Fund</a></h5>
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+              <p class="card-meta">Press Release</p>
+              <span class="btn btn-tag" style="background: rgba(33, 90, 238, 0.1); color: var(--primary-color); font-size: 0.6rem; padding: 2px 6px;">PR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+
+      <!-- Newsletter -->
+      <div class="sidebar-widget fade-in" style="text-align: center; margin-top: auto;">
+        <h4 class="sidebar-widget-title" style="border: none; padding-bottom: 0;">Stay Updated</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">Get the latest crypto news delivered daily to your inbox.</p>
+        <form class="newsletter-form" style="flex-direction: column;">
+          <input type="email" placeholder="Your email address" class="newsletter-input" style="width: 100%; border-radius: 50px; text-align: center;" required>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+        </form>
+      </div>
+  </aside>
+  </main>
+
+  <div class="container" style="margin-bottom: var(--space-16);">
+
+      <section class="fade-in">
+      <h2 class="section-title">Crypto News</h2>
+      <div class="grid grid-cols-3">
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1622790698141-94e30457ef12?q=80&w=800&auto=format&fit=crop" alt="DeFi" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">DeFi</span>
+            <h3 class="card-title"><a href="/article.html?id=3">JustLend DAO Launches Supply and Borrow Market V2</a></h3>
+            <p class="card-excerpt">The popular DeFi protocol has announced the launch of its V2 market, introducing new assets and improved efficiency.</p>
+            <div class="card-meta">
+              <span>June 17, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=800&auto=format&fit=crop" alt="Regulation" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">CryptoNews</span>
+            <h3 class="card-title"><a href="/article.html?id=4">U.S. Senators Push Treasury to Include States in GENIUS Act</a></h3>
+            <p class="card-excerpt">A new bipartisan push aims to give states more power in regulating stablecoins under the proposed GENIUS Act.</p>
+            <div class="card-meta">
+              <span>June 16, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=800&auto=format&fit=crop" alt="Fraud" class="card-img" />
+          <div class="card-content">
+            <span class="card-category">CryptoNews</span>
+            <h3 class="card-title"><a href="/article.html?id=5">Oklahoma Flags Suspected Crypto Fraud at BG Wealth</a></h3>
+            <p class="card-excerpt">State regulators have issued a warning regarding operations at BG Wealth, citing potential unregistered securities.</p>
+            <div class="card-meta">
+              <span>June 16, 2026</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+      <section class="fade-in">
+      <h2 class="section-title">Blockchain</h2>
+      <div class="grid grid-cols-3">
+        <article class="card fade-in">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1622790698141-94e30457ef12?q=80&w=800&auto=format&fit=crop" alt="Ethereum" class="card-img" style="height: 220px;" />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Ethereum</span>
+            <h3 class="card-title"><a href="/article.html?id=31">Vitalik Buterin Discusses the Next Ethereum Upgrade</a></h3>
+            <div class="card-meta" style="margin-bottom: 0;">
+              <span>June 18, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800&auto=format&fit=crop" alt="Solana" class="card-img" style="height: 220px;" />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Solana</span>
+            <h3 class="card-title"><a href="/article.html?id=32">Why Institutional Money is Pouring into Solana Ecosystem</a></h3>
+            <div class="card-meta" style="margin-bottom: 0;">
+              <span>June 17, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=800&auto=format&fit=crop" alt="Regulation" class="card-img" style="height: 220px;" />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Regulation</span>
+            <h3 class="card-title"><a href="/article.html?id=33">Navigating the Upcoming MiCA Regulations in EU</a></h3>
+            <div class="card-meta" style="margin-bottom: 0;">
+              <span>June 16, 2026</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+      <!-- Newsletter Banner -->
+      <div class="newsletter-banner fade-in">
+      <h2>Stay Ahead of the Market</h2>
+      <p>Get the most critical crypto news, deep dives, and market analysis delivered straight to your inbox every morning. No spam, just value.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();" style="display: flex; gap: var(--space-2);">
+        <input type="email" placeholder="Enter your email address" required style="flex: 1; padding: 14px 24px; background: var(--surface-color); border: none; border-radius: 50px; color: var(--text-primary); outline: none; box-shadow: var(--neu-shadow-inset);" />
+        <button type="submit" class="btn btn-primary" style="padding: 14px 32px;">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/Logo darkmode.png" alt="CryptoDailyAlert Logo" class="footer-logo" />
+          <p>CryptoDailyAlert — your go-to source for the most important news, in-depth analysis, and practical information on crypto.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="/category.html?cat=cryptonews">CryptoNews</a></li>
+            <li><a href="/category.html?cat=blockchain">Blockchain</a></li>
+            <li><a href="/category.html?cat=defi">DeFi</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe</h3>
+          <p>Get the latest crypto news directly to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CryptoDailyAlert. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">Twitter</a>
+          <a href="#">Telegram</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initTheme, initScrollAnimations } from '/main.js';
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      initScrollAnimations();
+    });
+  </script>
+</body>
+</html>
